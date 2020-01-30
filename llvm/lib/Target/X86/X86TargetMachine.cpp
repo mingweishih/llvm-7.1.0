@@ -512,6 +512,7 @@ void X86PassConfig::addPreEmitPass() {
 
 void X86PassConfig::addPreEmitPass2() {
   addPass(createX86RetpolineThunksPass());
+  addPass(createX86BinaryAnalysisPass());
   // Verify basic block incoming and outgoing cfa offset and register values and
   // correct CFA calculation rule where needed by inserting appropriate CFI
   // instructions.

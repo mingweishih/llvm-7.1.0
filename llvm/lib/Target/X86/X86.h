@@ -129,6 +129,8 @@ void initializeEvexToVexInstPassPass(PassRegistry &);
 
 FunctionPass *createX86SpeculativeLoadHardeningPass();
 
+FunctionPass *createX86BinaryAnalysisPass();
+
 } // End llvm namespace
 
 #endif
